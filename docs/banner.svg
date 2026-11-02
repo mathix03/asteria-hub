@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Asteria Hub</title>
+  <desc id="desc">Votre bibliothèque. Votre espace de jeu. Une application locale, indépendante et open source.</desc>
+  <rect width="1280" height="360" rx="20" fill="#11161e"/>
+  <path d="M0 310h1280" stroke="#303a44"/>
+  <g fill="none" stroke="#384a36" transform="translate(1040 160)">
+    <ellipse rx="165" ry="92" transform="rotate(-28)"/>
+    <ellipse rx="165" ry="92" transform="rotate(38)"/>
+    <ellipse rx="165" ry="92" transform="rotate(104)"/>
+  </g>
+  <g transform="translate(1040 160)" stroke="#b7f37b" stroke-width="11">
+    <path d="M-75 0H75M0-75V75M-53-53L53 53M-53 53L53-53"/>
+  </g>
+  <g font-family="Segoe UI,Arial,sans-serif">
+    <text x="62" y="68" fill="#b7f37b" font-size="13" letter-spacing="4">LOCAL FIRST · OPEN SOURCE</text>
+    <text x="58" y="156" fill="#f2f5f7" font-size="74" font-weight="700" letter-spacing="-3">asteria hub</text>
+    <text x="62" y="214" fill="#d4dce5" font-size="25">Votre bibliothèque. Votre espace de jeu.</text>
+    <text x="62" y="258" fill="#95a3b5" font-size="16">Organisez vos jeux · Retrouvez vos favoris · Lancez votre émulateur</text>
+    <text x="62" y="340" fill="#a9b8a1" font-size="12" letter-spacing="2">SANS COMPTE · SANS CLOUD · VOS FICHIERS RESTENT CHEZ VOUS</text>
+  </g>
+</svg>

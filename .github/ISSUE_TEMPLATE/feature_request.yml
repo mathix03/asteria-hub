@@ -1,0 +1,20 @@
+name: Proposer une amélioration / Feature request
+description: Proposer une fonctionnalité ou une amélioration d’utilisation.
+title: "[Idée] "
+body:
+  - type: textarea
+    id: need
+    attributes:
+      label: Quel besoin souhaites-tu résoudre ?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Solution proposée
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives ou exemples utiles

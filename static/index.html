@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="fr">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#10131a"><title>Asteria Hub · Votre bibliothèque</title><link rel="icon" href="/static/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="/static/style.css"><script src="/static/app.js" defer></script></head>
+<body>
+<a class="skip" href="#library">Aller à la bibliothèque</a>
+<aside class="sidebar">
+ <a class="brand" href="/" aria-label="Asteria Hub, accueil"><span class="mark">✳</span><span>asteria<span class="brand-small">HUB / LOCAL LIBRARY</span></span></a>
+ <p class="eyebrow">VOTRE ESPACE</p>
+ <nav aria-label="Bibliothèque"><button class="nav active" id="allTab" aria-pressed="true"><span>▦</span> Bibliothèque <b id="navCount">0</b></button><button class="nav" id="favoritesTab" aria-pressed="false"><span>☆</span> Favoris</button><button class="nav" id="recentTab" aria-pressed="false"><span>◷</span> Derniers lancements</button></nav>
+ <div class="side-bottom"><div class="local-label"><i></i> Vos fichiers restent chez vous</div><button id="settingsBtn" class="nav"><span>⚙</span> Paramètres</button><span class="version">ASTERIA HUB · 2.0.0</span></div>
+</aside>
+<main id="library" tabindex="-1">
+ <header><span class="breadcrumb">ESPACE PERSONNEL <span>/</span> BIBLIOTHÈQUE</span><button id="exportBtn" class="subtle">Exporter la liste ↗</button></header>
+ <section class="hero"><div><p class="eyebrow accent">TOUS VOS MONDES, UN SEUL ENDROIT</p><h1>Prêt pour la<br>prochaine aventure<span> ?</span></h1><p class="intro">Une bibliothèque à votre image. Retrouvez vos jeux,<br class="desktop"> organisez vos favoris et lancez votre émulateur.</p><button class="primary" id="configureBtn">＋ Configurer ma bibliothèque</button></div><div class="orbit" aria-hidden="true"><div class="orbit-inner"></div><span class="star">✳</span><span class="orbit-tag">LOCAL FIRST<br><b>PLAY YOUR WAY.</b></span></div></section>
+ <section class="stats" aria-label="Statistiques"><div><span>JEUX DÉTECTÉS</span><strong id="gameCount">0</strong></div><div><span>TAILLE DE LA BIBLIOTHÈQUE</span><strong id="totalSize">0 o</strong></div><div><span>ÉMULATEUR</span><strong class="status-text" id="emulatorStatus">À configurer</strong></div></section>
+ <section class="collection"><div class="section-title"><h2 id="viewTitle">Ma bibliothèque</h2><button id="scanBtn" class="subtle">↻ Analyser les dossiers</button></div>
+ <div class="toolbar"><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="Rechercher un jeu…" aria-label="Rechercher un jeu"><kbd>/</kbd></label><label class="sr-only" for="format">Format</label><select id="format"><option value="all">Tous les formats</option><option>NSP</option><option>XCI</option><option>NSZ</option><option>NRO</option></select><label class="sr-only" for="sort">Trier par</label><select id="sort"><option value="title">Nom : A → Z</option><option value="recent">Dernier lancement</option><option value="modified">Fichiers récents</option><option value="size">Taille décroissante</option></select></div>
+ <p id="warnings" role="status" hidden></p><p class="result-label" id="resultCount" aria-live="polite">Chargement…</p><div id="games" class="games" aria-busy="true"></div>
+ <div class="pagination"><button id="previous" class="subtle" disabled>← Précédent</button><span id="pageLabel">1 / 1</span><button id="next" class="subtle" disabled>Suivant →</button></div>
+ </section><footer>Votre collection. Votre rythme. <span>Asteria Hub · Bibliothèque locale pour émulateur</span></footer>
+</main>
+<dialog id="settingsDialog" aria-labelledby="settingsTitle"><form id="settingsForm"><div class="dialog-heading"><div><p class="eyebrow accent">FAITES COMME CHEZ VOUS</p><h2 id="settingsTitle">Votre configuration</h2></div><button type="button" id="closeSettings" class="icon-button" aria-label="Fermer">×</button></div><p>Choisissez votre émulateur et les dossiers contenant vos jeux. Les sous-dossiers sont analysés automatiquement.</p><label for="emulator">Chemin complet de l’exécutable</label><input id="emulator" placeholder="C:\Emulateurs\Eden\eden.exe" maxlength="4096" autocomplete="off"><label for="directories">Dossiers de jeux <span>— un chemin par ligne</span></label><textarea id="directories" rows="5" placeholder="D:\Jeux\Switch" spellcheck="false"></textarea><p class="hint">Formats reconnus : NSP, XCI, NSZ et NRO. Aucun jeu, clé ou émulateur n’est fourni. La prise en charge des formats dépend de votre émulateur.</p><p id="settingsError" class="error" role="alert" hidden></p><div class="dialog-actions"><button type="button" id="cancelSettings" class="subtle">Annuler</button><button type="submit" id="saveSettings" class="primary">Enregistrer et analyser</button></div></form></dialog>
+<div id="toast" role="status" aria-live="polite" hidden></div>
+</body></html>

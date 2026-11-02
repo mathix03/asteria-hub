@@ -1,0 +1,31 @@
+name: Signaler un bug / Bug report
+description: Décrire un problème reproductible dans Asteria Hub.
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Merci de ne joindre aucun jeu, clé, firmware ou fichier de préférences personnel. Masquez vos chemins privés dans les captures."
+  - type: input
+    id: version
+    attributes:
+      label: Version d’Asteria Hub et système d’exploitation
+      placeholder: "2.0.0 — Windows 11 — exécutable ou Python 3.11"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Étapes pour reproduire
+      description: Quelles actions déclenchent le problème ?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Résultat attendu et résultat observé
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: Message d’erreur ou capture sans données personnelles
